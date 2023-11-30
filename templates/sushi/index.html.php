@@ -5,6 +5,8 @@
     <p><strong>description :<?= $sushi['description'] ?></strong></p>
     <p><strong>poisson : <?= $sushi['poisson'] ?></strong></p>
     <a href="sushi.php?id=<?= $sushi['id'] ?>" class="btn btn-success">voir</a>
+    <a href="deleteSushi.php?id=<?= $sushi['id'] ?>" class="btn btn-danger">supprimer</a>
+    <a href="editSushi.php?id=<?= $sushi['id'] ?>" class="btn btn-warning">edit</a>
 </div>
 
 
