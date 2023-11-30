@@ -47,6 +47,26 @@ $baseDonneesQuiches = [
     ]
 ];
 
+$dbHost = "localhost";
+$dbName = "nourriture";
+
+$username = "sushi-admin";
+$password = "blablabla";
+
+$pdo = new PDO(
+    "mysql:host=$dbHost;dbname=$dbName",
+    $username,
+    $password,
+    [
+        PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE=>PDO::FETCH_ASSOC
+    ]
+);
+
+
+
+
+
 function afficher($nomDeTemplate, $donnees){
 
     ob_start();
@@ -55,6 +75,8 @@ function afficher($nomDeTemplate, $donnees){
     require_once "templates/${nomDeTemplate}.html.php";
 
     $content = ob_get_clean();
+
+    if(!isset($pageTitle)){ $pageTitle = "Pas de titre"; }
 
     require_once "templates/base.html.php";
 
