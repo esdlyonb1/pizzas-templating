@@ -1,2 +1,4 @@
 <?php
-/// afficher tous les tacos
+require_once 'logique/logique.php';
+
+afficher('tacos/tacos', ["tacos"=>$baseDonneesTacos]);

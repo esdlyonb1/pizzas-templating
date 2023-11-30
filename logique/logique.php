@@ -15,6 +15,37 @@ $baseDonneesPizzas = [
 
     ]
 ];
+$baseDonneesTacos = [
+    [
+        "id" => 1,
+        "name"=>"lyonnais",
+        "description"=> "lardons sauce fromage"
+
+    ],
+
+    [
+        "id" => 2,
+        "name"=>"degueu",
+        "description"=> "beaucoup de trucs pas bons"
+
+    ]
+];
+
+$baseDonneesQuiches = [
+    [
+        "id" => 1,
+        "name"=>"lorraine",
+        "description"=> "lardons creme fraiche"
+
+    ],
+
+    [
+        "id" => 2,
+        "name"=>"saumon",
+        "description"=> "beaucoup de saumon"
+
+    ]
+];
 
 function afficher($nomDeTemplate, $donnees){
 
